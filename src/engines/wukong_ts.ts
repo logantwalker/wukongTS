@@ -934,6 +934,7 @@ const wukong_ts = () => {
             // @ts-ignore - pieceList contains numerical keys, but for some reason, typescript hates that we are indexing an object with a number?
             for (
                 let pieceIndex = 0;
+                //@ts-ignore
                 pieceIndex < pieceList[piece];
                 pieceIndex++
             ) {
@@ -1169,6 +1170,7 @@ const wukong_ts = () => {
             // @ts-ignore
             for (
                 let pieceIndex = 0;
+                //@ts-ignore
                 pieceIndex < pieceList[piece];
                 pieceIndex++
             ) {
@@ -3444,10 +3446,12 @@ const wukong_ts = () => {
         for (let piece = N; piece <= Q; piece++)
             //@ts-ignore
             gamePhaseScore +=
+                //@ts-ignore
                 pieceList[piece] * materialWeights[opening][piece];
         for (let piece = n; piece <= q; piece++)
             //@ts-ignore
             gamePhaseScore +=
+                //@ts-ignore
                 pieceList[piece] * -materialWeights[opening][piece];
 
         return gamePhaseScore;
@@ -3472,6 +3476,7 @@ const wukong_ts = () => {
             //@ts-ignore
             for (
                 let pieceIndex = 0;
+                //@ts-ignore
                 pieceIndex < pieceList[piece];
                 pieceIndex++
             ) {
@@ -4491,6 +4496,7 @@ const wukong_ts = () => {
             // @ts-ignore
             for (
                 var pieceNumber = 0;
+                //@ts-ignore
                 pieceNumber < pieceList[piece];
                 pieceNumber++
             )
